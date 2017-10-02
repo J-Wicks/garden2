@@ -26,6 +26,9 @@
   height: 90vh;
 }
 
+.green {
+  background-color: green;
+}
 .vh90 {
   height: 90vh
 }
@@ -33,10 +36,26 @@
 #sidebarFloatLeft {
   float: left;
   width: 250px;
+  margin-left: 100px;
 }
 .landing {
   float: left;
   width: 500px;
+}
+.plantDetail {
+  float: left;
+  width: 500px;
+}
+.plantDetail img{
+  float: left;
+  width: 100px;
+}
+.plantDetail .whatevertext{
+height: 66.61px;
+margin: 0px;
+}
+.plantDetail ul{
+  padding: none;
 }
 #sidebarFloatRight {
   float: left;
@@ -45,6 +64,22 @@
 .whiteBg {
   background-color: white;
 }
+
+.sidebarImg {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.sidebarImg img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

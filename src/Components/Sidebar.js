@@ -1,12 +1,17 @@
-import React, { Component } from 'react';
-import classNames from 'classnames';
+import React from 'react';
+import ImageCircle from './ImageCircle';
+import plants from '../Assets/plants';
 
 const SideBar = (props) => {
   return (
-      <div id={props.barId} className="vh90">
-        <p>
-          Cooper's Garden
-        </p>
+      <div id={props.barId} className="vh90 green">
+        <ul>
+          {
+            plants.map(plant => {
+              return <ImageCircle src={plant.imgSrc} />;
+            })
+          }
+        </ul>
       </div>
     );
 }
