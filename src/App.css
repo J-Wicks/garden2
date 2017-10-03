@@ -1,31 +1,47 @@
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./Assets/home.jpeg')
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#splashPage {
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#splashPage h1{
+  margin: 0px;
 }
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
 .landing img {
+  float: left;
   height: 90vh;
 }
 
+.landing p {
+  display: none;
+  float: left;
+  height: 90vh;
+}
+
+.plantDetail li {
+  display: inline;
+  background-color: green;
+}
+
+.plantDetail button {
+  color: none;
+  background-color: transparent;
+  border: none
+}
+
+
+#displayPane {
+  width: 75vw;
+  height: 70vh;
+  border: 1px solid black;
+  background-color: rgba(107, 107, 104, 0.51)
+}
 .green {
   background-color: green;
 }
@@ -35,19 +51,16 @@
 
 #sidebarFloatLeft {
   float: left;
+  overflow: scroll;
   width: 250px;
-  margin-left: 100px;
+  height: 70vh;
 }
-.landing {
-  float: left;
-  width: 500px;
-}
+
 .plantDetail {
-  float: left;
+  display: inline-block;
   width: 500px;
 }
 .plantDetail img{
-  float: left;
   width: 100px;
 }
 .plantDetail .whatevertext{
@@ -58,8 +71,10 @@ margin: 0px;
   padding: none;
 }
 #sidebarFloatRight {
-  float: left;
+  overflow: scroll;
+  float: right;
   width: 250px;
+  height: 70vh;
 }
 .whiteBg {
   background-color: white;
