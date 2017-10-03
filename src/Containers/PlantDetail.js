@@ -22,16 +22,22 @@ export default class PlantDetail extends Component {
     return (
       <div className="plantDetail">
         <img src={plant.imgSrc} />
-        <p className="whatevertext"> {plant.name} </p>
-        <ul>
-          <li onClick={this.clickHandler}> 
-          <button value="tips"> Tips </button>
-          </li>
-          <li onClick={this.clickHandler}> 
-            <button value="cooperNotes"> Cooper's Notes </button>
-          </li>
-        </ul>
-        <p> {plant[this.state.blurbDisplay]}</p>
+        <div className="infoBlock"> 
+          <b>Name: </b> {plant.name} <br/>
+          <b>Scientific Name: </b> {plant.scientificName} <br />
+          <b>Location: </b> {plant.location} <br />
+        </div>
+          <div id="plantBlurb">
+          <ul >
+            <li onClick={this.clickHandler}> 
+            <button value="tips"> Tips </button>
+            </li>
+            <li onClick={this.clickHandler}> 
+              <button value="cooperNotes"> Cooper's Notes </button>
+            </li>
+          </ul>
+          <p> {plant[this.state.blurbDisplay]}</p>
+        </div>
       </div>
   )
   }

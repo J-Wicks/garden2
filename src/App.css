@@ -1,7 +1,14 @@
+::-webkit-scrollbar { 
+  display: none; 
+}
+ * {
+  font-family: 'Open Sans', sans-serif;
+ }
 .App {
   text-align: center;
   height: 100vh;
   width: 100vw;
+  padding: 100px;
   background-image: url('./Assets/home.jpeg')
 }
 
@@ -11,7 +18,20 @@
 }
 
 #splashPage h1{
-  margin: 0px;
+  font-size: 5em;
+  font-family: 'Dancing Script', cursive;
+  float: left
+}
+
+#splashPage button{
+
+  float: left;
+  clear: left;
+  background-color: green;
+  border: 1px solid black;
+  border-radius: 25px;
+  height: 25px;
+  width: 40px;
 }
 .landing img {
   float: left;
@@ -29,6 +49,34 @@
   background-color: green;
 }
 
+.plantDetail img {
+  float: left;
+
+}
+
+#plantBlurb{
+  width: 75%;
+  float: left;
+  clear: left;
+}
+
+#plantBlurb ul{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 75%;
+  background-color: green;
+  float: left;
+  clear: left;
+}
+#plantBlurb p{
+  width: 75%;
+}
+
+.infoBlock {
+  float: left;
+  text-align: left;
+}
+
 .plantDetail button {
   color: none;
   background-color: transparent;
@@ -37,6 +85,7 @@
 
 
 #displayPane {
+  border-radius: 50px;
   width: 75vw;
   height: 70vh;
   border: 1px solid black;
@@ -50,31 +99,36 @@
 }
 
 #sidebarFloatLeft {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
   float: left;
-  overflow: scroll;
+  overflow: hidden;
   width: 250px;
   height: 70vh;
 }
 
 .plantDetail {
   display: inline-block;
-  width: 500px;
+  width: 39vw;
 }
 .plantDetail img{
   width: 100px;
 }
-.plantDetail .whatevertext{
-height: 66.61px;
-margin: 0px;
-}
+
 .plantDetail ul{
   padding: none;
 }
 #sidebarFloatRight {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
   overflow: scroll;
   float: right;
   width: 250px;
   height: 70vh;
+
+}
+#sidebarFloatRight ul{
+  padding: 0px;
 }
 .whiteBg {
   background-color: white;
