@@ -23,9 +23,9 @@ export default class PlantDetail extends Component {
       <div className="plantDetail">
         <img src={plant.imgSrc} />
         <div className="infoBlock"> 
-          <b>Name: </b> {plant.name} <br/>
-          <b>Scientific Name: </b> {plant.scientificName} <br />
-          <b>Location: </b> {plant.location} <br />
+          <h3>{plant.name}</h3> <br/>
+          <i>{plant.scientificName}  </i> <br />
+          {plant.location} <br />
         </div>
           <div id="plantBlurb">
           <ul >

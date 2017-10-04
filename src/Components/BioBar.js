@@ -6,10 +6,8 @@ import cooperPic from '../Assets/cooperpic.png';
 const SideBar = (props) => {
   return (
       <div id="sidebarFloatLeft" className="vh90 green">
-        <li className="sidebarImg">
-          <img src={cooperPic} />
+          <img className="bioPic" src={cooperPic} />
 
-        </li>
         <p>
         Hello I am Cooper. Actually I am Jeremy in disguise and I am writing this biography for Cooper.
         This site is a gift for Cooper for her birthday, you see, and I won't be able to get her to fill this out without spoiling the gift.
