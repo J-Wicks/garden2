@@ -76,6 +76,8 @@
   height: 30px;
 }
 #plantBlurb p{
+  width: 36vw;
+  font-family: 'Times New Roman', Times, serif;
   padding: 10px;
 }
 
