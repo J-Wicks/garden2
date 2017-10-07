@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Zoom} from 'react-reveal';
 import plants from '../Assets/plants';
 
 export default class PlantDetail extends Component {
@@ -20,7 +21,7 @@ export default class PlantDetail extends Component {
  render() {
    const plant = plants.filter(plant => plant.srcURL===this.props.match.params.plant)[0]
     return (
-      <div className="plantDetail">
+      <Zoom className="plantDetail">
         <img src={plant.imgSrc} />
         <div className="infoBlock"> 
           <h3>{plant.name}</h3> <br/>
@@ -44,7 +45,7 @@ export default class PlantDetail extends Component {
           </ul>
           <p> {plant[this.state.blurbDisplay]}</p>
         </div>
-      </div>
+      </Zoom>
   )
   }
 }
