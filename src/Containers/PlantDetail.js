@@ -6,7 +6,7 @@ export default class PlantDetail extends Component {
     super(props);
     this.state = {
       plant: plants.filter(plant => plant.srcURL === this.props.match.params.plant)[0],
-      blurbDisplay: 'tips',
+      blurbDisplay: 'description',
     };
     this.clickHandler = this.clickHandler.bind(this);
   };
@@ -29,11 +29,17 @@ export default class PlantDetail extends Component {
         </div>
           <div id="plantBlurb">
           <ul >
-            <li onClick={this.clickHandler}> 
-            <button value="tips"> Tips </button>
+          <li onClick={this.clickHandler}> 
+            <button value="description"> Description </button>
             </li>
             <li onClick={this.clickHandler}> 
-              <button value="cooperNotes"> Cooper's Notes </button>
+            <button value="taxonomy"> Taxonomy </button>
+            </li>
+            <li onClick={this.clickHandler}> 
+            <button value="distribution"> Distribution & Habitat </button>
+            </li>
+            <li onClick={this.clickHandler}> 
+              <button value="cooperNotes"> Cooper's Tips </button>
             </li>
           </ul>
           <p> {plant[this.state.blurbDisplay]}</p>
